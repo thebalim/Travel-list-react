@@ -1,1 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: darkgreen;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+
+  padding: 10px;
+}
+
+h1 {
+  padding: 10px;
+  text-align: center;
+  background-color: burlywood;
+  color: brown;
+  border-radius: 7px;
+}
+
+.add-form {
+  display: flex;
+  gap: 1px;
+  border: solid 3px darkgreen;
+  border-radius: 7px;
+  width: 500px;
+}
+
+.add-form select {
+  flex-grow: 0.3;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+.add-form input {
+  flex-grow: 1;
+  padding: 10px;
+  outline: none;
+  border: 1px solid burlywood;
+}
+
+.add-form input:focus {
+  border: 1px solid brown;
+}
+
+.add-form button {
+  flex-grow: 0.5;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: aquamarine;
+  text-align: center;
+  font-weight: 700;
+  color: darkgreen;
+}
+
+.travel-list {
+  border: 3px solid brown;
+  padding: 10px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.travel-list ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  gap: 3px;
+}
+
+.travel-list ul li {
+  background-color: lightgreen;
+  padding: 10px 20px;
+  display: flex;
+  position: relative;
+  gap: 3px;
+}
+
+.travel-list ul li span {
+  margin-left: 2px;
+  margin-right: 5px;
+}
+
+.travel-list ul li p {
+  text-transform: capitalize;
+}
+
+.travel-list ul li input[type="checkbox"] {
+  cursor: pointer;
+  line-height: normal;
+  width: 35px;
+}
+
+.remove-btn {
+  position: absolute;
+  right: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.sort-buttons {
+  padding-top: 10px;
+  padding-bottom: 2px;
+  margin: 0px auto;
+  display: flex;
+  gap: 2px;
+}
+
+.sort-buttons span {
+  padding: 3px 6px;
+}
+
+.sort-buttons button {
+  padding: 3px 6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sort-buttons select,
+.sort-buttons select option {
+  text-align: center;
+  padding: 3px 6px;
+  color: green;
+}
+
+.stats {
+  border: 3px solid brown;
+  padding: 10px;
+  background-color: burlywood;
+  text-align: center;
+}
